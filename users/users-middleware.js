@@ -34,7 +34,7 @@ function restrict() {
 
 
 			if(!req.session || !req.session.user) {
-				return res.stats(401).json({
+				return res.status(401).json({
 					message: "invalid"
 				})
 			}
