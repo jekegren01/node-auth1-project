@@ -24,7 +24,7 @@ server.use(session({
 	}),
 }))
 
-server.use(usersRouter)
+server.use("/api", usersRouter)
 
 server.use((err, req, res, next) => {
 	console.log(err)
